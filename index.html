@@ -236,10 +236,32 @@ window.onload=()=>show('home');
 </script></head><body>
 <header><h1>Brettspiel der klasse 8A</h1></header>
 <nav>
-<a href="#" onclick="show('home')">Hauptseite</a>
-<a href="#" onclick="show('anleitung')">Spielanleitung</a>
-<a href="#" onclick="show('entwickler')">Entwickler</a>
-<a href="#" onclick="show('bilder')">Bilder</a>
+
+    <a href="#" onclick="show('home')">Hauptseite</a>
+
+    <a href="#" onclick="show('anleitung')">Spielanleitung</a>
+
+    <a href="#" onclick="show('entwickler')">Entwickler</a>
+
+
+    <div class="dropdown">
+
+        <a href="#">📂 Projekt ▾</a>
+
+        <div class="dropdown-content">
+
+            <a href="#" onclick="show('galerie')">
+                📸 Bildergalerie
+            </a>
+
+            <a href="#" onclick="show('idee')">
+                💡 Die Idee
+            </a>
+
+        </div>
+
+    </div>
+
 </nav>
 <div id="home" class="page">
 
