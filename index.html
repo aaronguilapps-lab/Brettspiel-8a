@@ -94,9 +94,79 @@ footer a{color:#fff}
     line-height:1.7;
     color:#ddd;
 }
+
+.about-card{
+    background:#222;
+    border:2px solid #1b4fd1;
+    border-radius:18px;
+    padding:35px;
+    margin-top:20px;
+    text-align:center;
+}
+
+.about-card h1{
+    color:#4da3ff;
+    margin-bottom:20px;
+}
+
+.about-text{
+    max-width:750px;
+    margin:auto;
+    line-height:1.8;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.info-box{
+    background:#181818;
+    border:1px solid #333;
+    border-radius:12px;
+    padding:20px;
+    transition:0.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-5px);
+    border-color:#1b4fd1;
+    box-shadow:0 0 15px rgba(27,79,209,.4);
+}
+
+.info-box h3{
+    color:#4da3ff;
+    margin-bottom:10px;
+}
+
+.info-box p{
+    color:#ddd;
+    margin:0;
+}
+
+.danke{
+    border-top:1px solid #444;
+    padding-top:25px;
+    color:#ccc;
+    line-height:1.7;
+}
     
 </style>
 
+
+
+
+
+
+
+
+
+
+    
   <script>
 function show(id){
 document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -266,22 +336,22 @@ window.onload=()=>show('home');
         <h1>Aaron Guil Arcos</h1>
 
         <p class="about-text">
-            Willkommen auf der Projektwebsite unseres Brettspiels!
-            Diese Website wurde von <b>Aaron Guil Arcos</b> erstellt und
-            programmiert. Sie dient dazu, unser Schulprojekt übersichtlich
-            vorzustellen und Informationen rund um das Brettspiel bereitzustellen.
+            Hallo! Mein Name ist <b>Aaron Guil Arcos</b> und ich bin Schüler der
+            Klasse <b>8A</b>. Für unser Brettspiel-Projekt habe ich diese Website
+            entworfen und programmiert. Ziel war es, unser Projekt übersichtlich
+            und modern zu präsentieren.
         </p>
 
         <div class="about-grid">
 
             <div class="info-box">
-                <h3>🏫 Schule</h3>
-                <p>Klasse 8A</p>
+                <h3>🏫 Klasse</h3>
+                <p>8A</p>
             </div>
 
             <div class="info-box">
                 <h3>💻 Aufgabe</h3>
-                <p>Programmierung und Gestaltung der Website</p>
+                <p>Programmierung der Website</p>
             </div>
 
             <div class="info-box">
@@ -290,15 +360,15 @@ window.onload=()=>show('home');
             </div>
 
             <div class="info-box">
-                <h3>📅 Schuljahr</h3>
-                <p>2026/27</p>
+                <h3>⭐ Über mich</h3>
+                <p>HIER KANNST DU ETWAS ÜBER DICH SCHREIBEN.</p>
             </div>
 
         </div>
 
         <p class="danke">
-            Vielen Dank für Ihren Besuch auf unserer Website.
-            Wir hoffen, dass Ihnen unser Brettspiel gefällt und wünschen viel Spaß beim Entdecken unseres Projekts!
+            Vielen Dank, dass Sie unsere Website besucht haben.
+            Ich wünsche Ihnen viel Spaß beim Entdecken unseres Brettspiels!
         </p>
 
     </div>
