@@ -46,7 +46,55 @@ footer a{color:#fff}
     border-bottom:2px solid #1b4fd1;
     padding-bottom:8px;
 }
-  
+
+.einleitung{
+    text-align:center;
+    font-size:18px;
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+.schritt{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:25px;
+    background:#222;
+    padding:20px;
+    border-left:6px solid #1b4fd1;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.schritt:hover{
+    transform:translateX(8px);
+    background:#2d2d2d;
+}
+
+.nummer{
+    min-width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#1b4fd1;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.inhalt h3{
+    margin:0 0 10px;
+    color:#4da3ff;
+}
+
+.inhalt p{
+    margin:0;
+    line-height:1.7;
+    color:#ddd;
+}
+    
 </style>
 
   <script>
@@ -150,7 +198,65 @@ window.onload=()=>show('home');
 
     </div>
 </div>
-<div id='anleitung' class='page'><h2>Spielanleitung</h2><p>Hier deine Anleitung.</p></div>
+<div id="anleitung" class="page">
+
+    <h2>📖 Spielanleitung</h2>
+
+    <p class="einleitung">
+        Hier kommt eine kurze Beschreibung des Spiels hin.
+    </p>
+
+    <div class="schritt">
+        <div class="nummer">1</div>
+        <div class="inhalt">
+            <h3>Vorbereitung</h3>
+            <p>
+                ➜ HIER DEINE VORBEREITUNG EINFÜGEN.
+            </p>
+        </div>
+    </div>
+
+    <div class="schritt">
+        <div class="nummer">2</div>
+        <div class="inhalt">
+            <h3>Spielbeginn</h3>
+            <p>
+                ➜ HIER DEN SPIELBEGINN EINFÜGEN.
+            </p>
+        </div>
+    </div>
+
+    <div class="schritt">
+        <div class="nummer">3</div>
+        <div class="inhalt">
+            <h3>Spielablauf</h3>
+            <p>
+                ➜ HIER DEN SPIELABLAUF EINFÜGEN.
+            </p>
+        </div>
+    </div>
+
+    <div class="schritt">
+        <div class="nummer">4</div>
+        <div class="inhalt">
+            <h3>Besondere Regeln</h3>
+            <p>
+                ➜ HIER BESONDERE REGELN EINFÜGEN.
+            </p>
+        </div>
+    </div>
+
+    <div class="schritt">
+        <div class="nummer">5</div>
+        <div class="inhalt">
+            <h3>Spielende</h3>
+            <p>
+                ➜ HIER ERKLÄREN, WANN DAS SPIEL ENDET UND WER GEWINNT.
+            </p>
+        </div>
+    </div>
+
+</div>
 <div id='about' class='page'><h2>Über den Website-Hersteller</h2><p><b>Aaron Guil Arcos</b></p><p>Programmierer und Ersteller dieser Website.</p><p>Schüler der Klasse 8A</p></div>
 <footer><a href="#" onclick="show('about')">Programmiert von Aaron Guil Arcos</a></footer>
 </body></html>
