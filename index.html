@@ -148,6 +148,70 @@ footer a{color:#fff}
     margin:0;
 }
 
+    .hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#4da3ff;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.info-section{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin:80px 0;
+    flex-wrap:wrap;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.info-image{
+    flex:1;
+    min-width:320px;
+}
+
+.info-image img{
+    width:100%;
+    border-radius:18px;
+    border:3px solid #1b4fd1;
+    transition:.3s;
+}
+
+.info-image img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 25px rgba(27,79,209,.5);
+}
+
+.info-text{
+    flex:1;
+    min-width:320px;
+}
+
+.info-text h2{
+    color:#4da3ff;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.info-text p{
+    line-height:1.9;
+    color:#ddd;
+    font-size:18px;
+}
     
 </style>
 
@@ -177,7 +241,68 @@ window.onload=()=>show('home');
 <a href="#" onclick="show('entwickler')">Entwickler</a>
 <a href="#" onclick="show('bilder')">Bilder</a>
 </nav>
-<div id='home' class='page'><h2>Hauptseite</h2><p>Projektvorstellung.</p><p>Hier ein Bild vom unserem Projekt:</p><img src='bilder/projekt.jpg'><p>Hier ein Bild von der Klasse 8A:</p><p><img src='bilder/klasse.jpg'></p></div>
+<div id="home" class="page">
+
+    <section class="hero">
+
+        <h1>🎲 Brettspiel der Klasse 8A</h1>
+
+        <p>
+            Willkommen auf der offiziellen Website unseres Schulprojekts.
+            Hier erfahren Sie alles über die Entstehung, die Spielidee,
+            die Entwickler und die Spielanleitung unseres Brettspiels.
+        </p>
+
+    </section>
+
+    <section class="info-section">
+
+        <div class="info-image">
+            <img src="bilder/projekt.jpg" alt="Unser Brettspiel">
+        </div>
+
+        <div class="info-text">
+            <h2>Unser Brettspiel</h2>
+
+            <p>
+                HIER BESCHREIBST DU DAS BRETTSPIEL.
+                Erzähle, worum es geht und warum ihr dieses Projekt
+                entwickelt habt.
+            </p>
+
+            <p>
+                DIESEN TEXT KANNST DU SPÄTER BELIEBIG ÄNDERN.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="info-section reverse">
+
+        <div class="info-text">
+
+            <h2>Die Klasse 8A</h2>
+
+            <p>
+                HIER KANNST DU ETWAS ÜBER EURE KLASSE,
+                DAS PROJEKT ODER DIE ZUSAMMENARBEIT
+                SCHREIBEN.
+            </p>
+
+            <p>
+                FÜGE HIER WEITEREN TEXT EIN.
+            </p>
+
+        </div>
+
+        <div class="info-image">
+            <img src="bilder/klasse.jpg" alt="Klasse 8A">
+        </div>
+
+    </section>
+
+</div>
 <div id='bilder' class='page'><h2>Die Herstellung und idee des Projektes</h2><p>Bilder und Geschichte hier einfügen.</p></div>
 <div id="entwickler" class="page">
     <h2>Die Entwickler des Brettspiels</h2>
