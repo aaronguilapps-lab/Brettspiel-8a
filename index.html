@@ -243,6 +243,27 @@ footer a{color:#fff}
 .dropdown:hover .dropdown-content{
     display:block;
 }
+
+.galerie-bilder{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.galerie-bilder img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid #1b4fd1;
+    transition:.3s;
+}
+
+.galerie-bilder img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(27,79,209,.5);
+}
     
 </style>
 
@@ -347,7 +368,7 @@ window.onload=()=>show('home');
             </p>
 
             <p>
-                FÜGE HIER WEITEREN TEXT EIN.
+                Wir wünschen dir viel spaß beim spielen. Liebe Grüße euere 8a.
             </p>
 
         </div>
@@ -368,7 +389,16 @@ window.onload=()=>show('home');
         und dokumentieren die einzelnen Arbeitsschritte.
     </p>
 
-    <!-- HIER SPÄTER DIE BILDER EINFÜGEN -->
+<div class="galerie-bilder">
+
+    <img src="bilder/idee.jpg" alt="Unsere Idee">
+    <img src="bilder/bau1.jpg" alt="Bau des Brettspiels">
+    <img src="bilder/bau2.jpg" alt="Weitere Bauphase">
+    <img src="bilder/fertig.jpg" alt="Fertiges Brettspiel">
+    <img src="bilder/bild5.jpg">
+    <img src="bilder/bild6.jpg">
+    
+</div>
 
 </div>
 
