@@ -7,13 +7,56 @@ nav{background:#222;padding:10px}nav a{color:#fff;margin:0 10px;text-decoration:
 .page.active{display:block}
 img{max-width:100%;border-radius:8px}
 footer a{color:#fff}
+
+.entwickler-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.entwickler-card{
+    background:#222;
+    border:2px solid #1b4fd1;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.entwickler-card:hover{
+    transform:translateY(-5px);
+    background:#2d2d2d;
+    box-shadow:0 0 15px rgba(27,79,209,.5);
+}
+
+.entwickler-card h4{
+    margin:0;
+    color:#4da3ff;
+    font-size:20px;
+}
+
+.entwickler-card p{
+    margin-top:8px;
+    color:#ccc;
+}
+
+#entwickler h3{
+    color:#4da3ff;
+    border-bottom:2px solid #1b4fd1;
+    padding-bottom:8px;
+}
+  
 </style>
-<script>
+
+  <script>
 function show(id){
 document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
 document.getElementById(id).classList.add('active');
 }
 window.onload=()=>show('home');
+
+
 </script></head><body>
 <header><h1>Brettspiel der klasse 8A</h1></header>
 <nav>
@@ -24,7 +67,89 @@ window.onload=()=>show('home');
 </nav>
 <div id='home' class='page'><h2>Hauptseite</h2><p>Projektvorstellung.</p><p>Hier ein Bild vom unserem Projekt:</p><img src='bilder/projekt.jpg'><p>Hier ein Bild von der Klasse 8A:</p><p><img src='bilder/klasse.jpg'></p></div>
 <div id='bilder' class='page'><h2>Die Herstellung und idee des Projektes</h2><p>Bilder und Geschichte hier einfügen.</p></div>
-<div id='entwickler' class='page'><h2>Die Entwickler des Brettspieles:</h2><p>HALLOOOOOO</p></div>
+<div id="entwickler" class="page">
+    <h2>Die Entwickler des Brettspiels</h2>
+
+    <h3>👨‍🏫 Lehrkräfte</h3>
+
+    <div class="entwickler-grid">
+        <div class="entwickler-card">
+            <h4>Lehrkraft 1</h4>
+            <p>Betreuende Lehrkraft</p>
+        </div>
+
+        <div class="entwickler-card">
+            <h4>Lehrkraft 2</h4>
+            <p>Betreuende Lehrkraft</p>
+        </div>
+    </div>
+
+    <h3 style="margin-top:40px;">👨‍🎓 Schülerinnen und Schüler der Klasse 8A</h3>
+
+    <div class="entwickler-grid">
+
+        <div class="entwickler-card"><h4>Aaron Guil Arcos</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 2</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 3</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 4</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 5</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 6</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 7</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 8</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 9</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 10</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 11</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 12</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 13</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 14</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 15</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 16</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 17</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 18</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 19</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 20</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 21</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 22</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 23</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 24</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 25</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 26</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 27</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 28</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 29</h4></div>
+
+        <div class="entwickler-card"><h4>Schüler 30</h4></div>
+
+    </div>
+</div>
 <div id='anleitung' class='page'><h2>Spielanleitung</h2><p>Hier deine Anleitung.</p></div>
 <div id='about' class='page'><h2>Über den Website-Hersteller</h2><p><b>Aaron Guil Arcos</b></p><p>Programmierer und Ersteller dieser Website.</p><p>Schüler der Klasse 8A</p></div>
 <footer><a href="#" onclick="show('about')">Programmiert von Aaron Guil Arcos</a></footer>
