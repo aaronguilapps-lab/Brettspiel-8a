@@ -212,6 +212,37 @@ footer a{color:#fff}
     color:#ddd;
     font-size:18px;
 }
+
+.dropdown{
+    display:inline-block;
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#222;
+    min-width:220px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,0,0,.5);
+    z-index:10;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:12px;
+    margin:0;
+    text-align:left;
+}
+
+.dropdown-content a:hover{
+    background:#1b4fd1;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
     
 </style>
 
