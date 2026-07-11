@@ -541,3 +541,104 @@ img{
         height:60px;
     }
 }
+
+/* Materialien Seite */
+
+.materialien-text{
+    text-align:center;
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+    max-width:850px;
+    margin:20px auto 40px;
+}
+
+
+.materialien-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+
+}
+
+
+.material-card{
+
+    background:#222;
+    border:2px solid #1b4fd1;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+
+}
+
+
+.material-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(77,163,255,.5);
+
+}
+
+
+.material-card img{
+
+    width:100%;
+    height:230px;
+    object-fit:cover;
+
+}
+
+
+.material-card h3{
+
+    color:#4da3ff;
+    text-align:center;
+    font-size:23px;
+    margin:20px 10px;
+
+}
+
+
+.material-card p{
+
+    color:#ddd;
+    line-height:1.7;
+    padding:0 20px 25px;
+    text-align:center;
+
+}
+
+
+/* Farb-Erklärung */
+
+.farben-box{
+
+    margin-top:50px;
+    background:#222;
+    border-radius:18px;
+    padding:25px;
+    border:2px solid #1b4fd1;
+
+}
+
+
+.farben-box h2{
+
+    color:#4da3ff;
+    text-align:center;
+
+}
+
+
+.farbe{
+
+    padding:15px;
+    margin:12px 0;
+    border-radius:10px;
+    font-weight:bold;
+
+}
